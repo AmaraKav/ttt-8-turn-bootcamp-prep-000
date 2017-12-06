@@ -9,6 +9,10 @@ end
 def valid_move?(board, input)
   converted = input_to_index(input)
   taken = position_taken(board[converted])
+  valid = false
+  if (taken == false)
+    valid = true
+  end
 end
 
 def position_taken?(board, input)
