@@ -6,6 +6,25 @@ def display_board(board)
   puts (" #{board[6]} | #{board[7]} | #{board[8]} ")
 end
 
+def valid_move?(board, input)
+  converted = input_to_index(input)
+  taken = position_taken(board[converted])
+end
+
+def position_taken?(board, input)
+  converted = input_to_index(input)
+  taken = true
+  if (board[converted] == " X " || board[converted] == " O ")
+    taken = true
+    return taken
+  elsif (board[converted] == "" || board[converted] == " ")
+    taken = false
+    return taken
+  else 
+    return taken
+  end
+end
+
 def input_to_index(input)
   index = input.to_i
 end
