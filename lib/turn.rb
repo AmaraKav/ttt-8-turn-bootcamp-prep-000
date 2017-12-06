@@ -20,7 +20,7 @@ def position_taken?(board, input)
   elsif (board[converted] == "" || board[converted] == " ")
     taken = false
     return taken
-  else 
+  else
     return taken
   end
 end
