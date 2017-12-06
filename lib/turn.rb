@@ -10,7 +10,7 @@ def valid_move?(board, input)
   converted = input_to_index(input)
   taken = position_taken?(board, input)
   valid = false
-  if (taken == false && converted.between?(1, 9))
+  if (taken == false && converted.between?(1, 8))
     valid = true
     return valid
   end
