@@ -14,6 +14,7 @@ def valid_move?(board, input)
     valid = true
     return valid
   end
+  return valid
 end
 
 def position_taken?(board, input)
